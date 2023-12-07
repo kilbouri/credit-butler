@@ -1,0 +1,6 @@
+# Safety net to make sure nobody accidentally
+# checks in their HTML transaction records lol
+**/*.html
+
+**/bin
+**/obj
