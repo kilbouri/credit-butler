@@ -77,7 +77,7 @@ public class RBCOnlineHTMLTransactionGenerator : HTMLTransactionGenerator
         {
             HtmlNode[] dataEntries = row.Elements("td").ToArray();
             string dateStr = dataEntries[0].InnerText;
-            string nameStr = dataEntries[1].InnerText;
+            string nameStr = dataEntries[1].InnerText.Trim();
             string debitStr = dataEntries[2].InnerText;
             string creditStr = dataEntries[3].InnerText;
 

@@ -10,19 +10,19 @@ public readonly struct Transaction
         Debit
     }
 
-    public readonly string Name;
+    public readonly string Vendor;
     public readonly DateTime Date;
     public readonly Money Value;
     public readonly TransactionType Type;
 
     public Transaction(string name, DateTime date, Money value, TransactionType type)
     {
-        (Name, Date, Value, Type) = (name, date, value, type);
+        (Vendor, Date, Value, Type) = (name, date, value, type);
     }
 
     public override string ToString()
     {
         string debitCreditString = this.Type == TransactionType.Credit ? "Credit" : "Debit";
-        return $"{debitCreditString}ed {Value} for {Name} on {Date}";
+        return $"{debitCreditString}ed {Value} for {Vendor} on {Date}";
     }
 }

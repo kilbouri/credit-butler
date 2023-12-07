@@ -8,5 +8,6 @@
     <ItemGroup>
       <PackageReference Include="HtmlAgilityPack" Version="1.11.54" />
       <PackageReference Include="Microsoft.Toolkit.Diagnostics" Version="7.1.2" />
+      <PackageReference Include="spectre.console" Version="0.48.0" />
     </ItemGroup>
 </Project>
